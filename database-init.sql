@@ -1,0 +1,3 @@
+CREATE DATABASE TDB;
+CREATE TABLE ecs (version VARCHAR(20));
+INSERT INTO ecs SET version = '2.34.45'
