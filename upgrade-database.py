@@ -30,10 +30,10 @@ def main():
         files.extend(filenames)
         break
 
-    files.sort(reverse=True)
+    files.sort()
 
     for file in files:
-        match = re.search('(^[0-9.]+)?(\.)', file)
+        match = re.search('(^[0-9.]+)(\.)?', file)
 
         found = match.group(1) if match else None
         print("Found is " + found)
