@@ -33,7 +33,7 @@ def main():
     files.sort()
 
     for file in files:
-        match = re.search('(^[0-9.]+)(\.)?', file)
+        match = re.search('^([0-9.]+)?(\.)\w+\.sql$', file)
 
         found = match.group(1) if match else None
         print("Found is " + found)
